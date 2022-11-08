@@ -1,0 +1,58 @@
+.banner {
+  position: relative;
+  background-image: url(../img/jpg/background_banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 200px;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  top: -175px;
+  z-index: -1;
+  text-align: center;
+  margin: 0;
+}
+
+.banner__text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+.banner__text--big {
+  font-size: 48px;
+  line-height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.banner__boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.banner__box {
+  color: $white;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding: 22px 0;
+  margin: 0;
+  border-radius: 50px;
+  width: 262px;
+}
+
+.banner__box--opt {
+  background-color: $red;
+  margin-right: 18px;
+}
+
+.banner__box--provider {
+  background-color: $blue;
+}

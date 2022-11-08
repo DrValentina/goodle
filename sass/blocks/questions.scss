@@ -1,0 +1,21 @@
+.questions {
+  padding-top: 100px;
+}
+
+.questions__title {
+  position: relative;
+}
+
+.questions__title::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/png/questions.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 267px 52px;
+  width: 267px;
+  height: 52px;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,21 @@
+.experts {
+  padding-top: 100px;
+}
+
+.experts__title {
+  position: relative;
+}
+
+.experts__title::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/png/experts.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 267px 57px;
+  width: 267px;
+  height: 57px;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
