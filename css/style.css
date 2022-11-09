@@ -675,7 +675,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 250px;
 }
 
 .numbers__enterprises {
@@ -693,6 +694,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+  white-space: nowrap;
 }
 
 .numbers__text--big {
@@ -702,6 +704,7 @@ body {
   font-weight: 600;
   margin: 0;
   padding: 0;
+  margin-left: 10px;
 }
 
 .numbers__footer {
@@ -725,6 +728,10 @@ body {
   padding-right: 10px;
 }
 
+.numbers__clients {
+  padding-left: 10px;
+}
+
 .numbers__number {
   font-family: "Montserrat-Bold", "Open Sans", sans-serif;
   font-size: 48px;
@@ -732,7 +739,7 @@ body {
   font-weight: 700;
   margin: 0;
   padding: 0;
-  margin-right: 60px;
+  margin-right: 30px;
 }
 
 .numbers__text {
