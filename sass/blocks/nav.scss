@@ -21,11 +21,34 @@
   font-weight: 600;
   text-align: right;
   margin-right: 0;
+  &:hover {
+    color: $red;
+    border-bottom: 2px solid $white;
+  }
+  &:active {
+    color: $white-transparent;
+    border-bottom: 2px solid $white-transparent;
+  }
 }
 
 .nav__link--red {
+  color: $white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: right;
+  margin-right: 0;
   background-color: $red;
   padding: 7px 14px;
   border-radius: 25px;
   box-shadow: inset 0 5px 5px 0 $red-shadow, 0 3px 3px 0 $black-shadow;
+  &:hover {
+    color: $white-transparent;
+  }
+  &:active {
+    color: $white-transparent;
+    background-color: $red;
+    box-shadow: inset 0 5px 5px 0 $dark-red, 0 0 0 0 $black-shadow;
+  }
 }
