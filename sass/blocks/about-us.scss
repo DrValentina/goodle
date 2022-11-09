@@ -102,7 +102,7 @@
   position: relative;
   margin-top: 100px;
   background-color: $red;
-  padding: 70px 240px;
+  padding: 70px 0;
   color: $white;
 }
 
@@ -114,9 +114,11 @@
 }
 
 .numbers__container {
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .numbers__enterprises {
@@ -163,7 +165,7 @@
 
 .numbers__countries {
   border-right: 1px solid $white;
-  padding-right: 40px;
+  padding-right: 10px;
 }
 
 .numbers__number {
