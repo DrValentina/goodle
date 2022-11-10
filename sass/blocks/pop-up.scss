@@ -1,0 +1,151 @@
+.pop-up {
+  position: absolute;
+  top: 200px;
+  z-index: 5;
+  background-color: $white;
+  color: $blue;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 5px 30px 0 $black-shadow,
+  -5px 0 10px 0 $black-shadow,
+  5px 0 10px 0 $black-shadow;
+}
+
+.pop-up__title {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.pop-up__button--exit {
+  position: absolute;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-right: 4px solid $blue;
+    top: -20px;
+    right: 10px;
+    transform: rotate(45deg);
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-right: 4px solid $blue;
+    top: 9px;
+    right: 10px;
+    transform: rotate(-45deg);
+  }
+}
+
+.pop-up__button--exit:hover {
+  opacity: 0.5;
+}
+
+.pop-up__form-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.pop-up__label {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.pop-up__label-mail {
+  white-space: nowrap;
+}
+
+.pop-up__input {
+  width: 170px;
+  padding: 10px;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  outline: none;
+}
+
+.pop-up__label-textarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.pop-up__textarea {
+  width: 100%;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.pop-up__text {
+  font-size: 11px;
+  line-height: 14px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.pop-up__button {
+  color: $white;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding: 22px 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  width: 262px;
+  cursor: pointer;
+  background-color: $red;
+  margin: 0 auto;
+}
+
+.pop-up__button--opt {
+  background-color: $red;
+  &:hover {
+    box-shadow: 3px 3px 3px 0 $black-shadow, inset 5px 5px 5px 0 $red-shadow;
+  }
+  &:active {
+    box-shadow: inset 5px 5px 5px 0 $dark-red;
+  }
+}
+
+.pop-up__button--provider {
+  background-color: $blue;
+  &:hover {
+    box-shadow: 3px 3px 3px 0 $black-shadow, inset 5px 5px 5px 0 $blue-shadow;
+  }
+  &:active {
+    box-shadow: inset 5px 5px 5px 0 $dark-blue;
+  }
+}

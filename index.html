@@ -34,9 +34,6 @@
             <li class="nav__item">
               <a class="nav__link" href="#questions">ЧаВо</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link--red" href="#">Связаться</a>
-            </li>
           </ul>
         </nav>
       </div>
@@ -52,9 +49,9 @@
           <p class="banner__text banner__text--big">Оптовые поставки из Турции и Ирана</p>
           <p class="banner__text">в Россию, Беларусь, Узбекистан, Кыргызстан, Азербайджан и др. страны СНГ и ЕАЭС</p>
         </div>
-        <div class="banner__boxes">
-          <p class="banner__box banner__box--opt">Оптовым <br>покупателям</p>
-          <p class="banner__box banner__box--provider">Поставщикам и производителям</p>
+        <div class="banner__buttons">
+          <button class="banner__button banner__button--opt" type="button" name="button-opt">Оптовым <br>покупателям</button>
+          <button class="banner__button banner__button--provider" type="button" name="button-provider">Поставщикам и производителям</button>
         </div>
       </section>
 
@@ -283,6 +280,93 @@
       </div>
     </footer>
 
+    <div class=" pop-up pop-up__opt visually-hidden">
+      <img class="pop-up__img pop-up__opt-img" src="img/svg/logo_header.svg" alt="Логотип" width="100px">
+      <h3 class="pop-up__title pop-up__opt-title">Мы находим товары</h3>
+      <button class="pop-up__button--exit button__exit--opt" type="button" name="button"></button>
+      <form class="pop-up__form pop-up__opt-form" action="#" method="post">
+        <div class="pop-up__form-input">
+          <label class="pop-up__label">*Имя
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Введите имя" required>
+          </label>
+          <label class="pop-up__label">Название компании
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Введите название компании">
+          </label>
+          <label class="pop-up__label">ИНН/ОГРН
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Введите ИНН/ОГРН">
+          </label>
+          <label class="pop-up__label">*Должность
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Введите должность" required>
+          </label>
+          <label class="pop-up__label">*Номер телефона
+            <input class="pop-up__input" type="tel" name="" value="" placeholder="Номер телефона" required>
+          </label>
+          <label class="pop-up__label pop-up__label-mail">*E-mail
+            <input class="pop-up__input" type="mail" name="" value="" placeholder="Электронная почта" required>
+          </label>
+          <label class="pop-up__label">Сфера деятельности
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Сфера деятельности">
+          </label>
+          <label class="pop-up__label">*Товары и услуги
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Товары и услуги" required>
+          </label>
+          <label class="pop-up__label">Бренды
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Бренды">
+          </label>
+        </div>
+        <label class="pop-up__label-textarea" for="">Ваши ожидания от сотрудничества
+          <textarea class="pop-up__textarea" name="name" rows="4" cols="50" placeholder="Введите Ваши пожелания" maxlength="1000"></textarea>
+        </label>
+        <p class="pop-up__text">*Поля обязательные к заполнению</p>
+        <p class="pop-up__text">Нажимая на эту кнопку, вы соглашаетесь на обработку персональных данных, согласно законодонательства РФ.</p>
+        <button class="pop-up__button pop-up__button--opt" type="submit" name="button">Отправить заявку</button>
+      </form>
+    </div>
+
+    <div class=" pop-up pop-up__provider visually-hidden">
+      <img class="pop-up__img pop-up__opt-img" src="img/svg/logo_header.svg" alt="Логотип" width="100px">
+      <h3 class="pop-up__title pop-up__opt-title">Мы находим товары</h3>
+      <button class="pop-up__button--exit button__exit--provider" type="button" name="button"></button>
+      <form class="pop-up__form pop-up__opt-form" action="#" method="post">
+        <div class="pop-up__form-input">
+          <label class="pop-up__label">*Имя
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Введите имя" required>
+          </label>
+          <label class="pop-up__label">Название компании
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Введите название компании">
+          </label>
+          <label class="pop-up__label">ИНН/ОГРН
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Введите ИНН/ОГРН">
+          </label>
+          <label class="pop-up__label">*Должность
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Введите должность" required>
+          </label>
+          <label class="pop-up__label">*Номер телефона
+            <input class="pop-up__input" type="tel" name="" value="" placeholder="Номер телефона" required>
+          </label>
+          <label class="pop-up__label pop-up__label-mail">*E-mail
+            <input class="pop-up__input" type="mail" name="" value="" placeholder="Электронная почта" required>
+          </label>
+          <label class="pop-up__label">Сфера деятельности
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Сфера деятельности">
+          </label>
+          <label class="pop-up__label">*Какие товары ищете?
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Какие товары ищите?" required>
+          </label>
+          <label class="pop-up__label">Критерии поиска (качество, количество, характеристика)
+            <input class="pop-up__input" type="text" name="" value="" placeholder="Критерии поиска">
+          </label>
+        </div>
+        <label class="pop-up__label-textarea" for="">Ваши ожидания от сотрудничества
+          <textarea class="pop-up__textarea" name="name" rows="4" cols="50" placeholder="Введите Ваши пожелания" maxlength="1000"></textarea>
+        </label>
+        <p class="pop-up__text">*Поля обязательные к заполнению</p>
+        <p class="pop-up__text">Нажимая на эту кнопку, вы соглашаетесь на обработку персональных данных, согласно законодонательства РФ.</p>
+        <button class="pop-up__button pop-up__button--provider" type="submit" name="button">Отправить заявку</button>
+      </form>
+    </div>
+
     <script type="text/javascript" src="js/questions.js"></script>
+    <script type="text/javascript" src="js/pop-up.js"></script>
   </body>
 </html>
