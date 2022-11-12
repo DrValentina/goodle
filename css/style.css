@@ -434,7 +434,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: right;
   margin-right: 0;
 }
@@ -476,7 +476,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 200px;
-  padding-top: 300px;
+  padding-top: 250px;
   padding-bottom: 300px;
   top: -175px;
   z-index: 1;
@@ -494,8 +494,8 @@ body {
 }
 
 .banner__text--big {
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 20px;
+  line-height: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -504,7 +504,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 80px;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .banner__button {
