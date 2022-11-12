@@ -477,7 +477,7 @@ body {
   background-size: cover;
   padding: 0 200px;
   padding-top: 250px;
-  padding-bottom: 300px;
+  padding-bottom: 250px;
   top: -175px;
   z-index: 1;
   text-align: center;
@@ -516,10 +516,12 @@ body {
   text-align: center;
   padding: 22px 0;
   margin: 0;
+  margin-top: 20px;
   border: none;
   outline: none;
   border-radius: 50px;
   width: 262px;
+  margin-right: 20px;
   cursor: pointer;
 }
 .banner__button:hover {
@@ -543,7 +545,6 @@ body {
 }
 .banner__button--opt {
   background-color: #D8222E;
-  margin-right: 20px;
 }
 .banner__button--opt:hover {
   box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5), inset 5px 5px 5px 0 #e3646c;
