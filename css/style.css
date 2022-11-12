@@ -922,16 +922,16 @@ body {
 }
 
 .specifics__consultation:hover::after {
-  content: "1";
+  content: "";
   position: absolute;
-  font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 66px;
-  line-height: 66px;
-  font-weight: 700;
-  color: #034D8E;
-  top: 33px;
-  left: 33%;
-  transition-duration: 0.2s;
+  background-image: url(../img/png/consultation.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  top: 45px;
+  left: 52px;
 }
 .specifics__consultation:hover::before {
   content: "";
@@ -973,16 +973,16 @@ body {
 }
 
 .specifics__provider:hover::after {
-  content: "2";
+  content: "";
   position: absolute;
-  font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 66px;
-  line-height: 66px;
-  font-weight: 700;
-  color: #034D8E;
-  top: 33px;
-  left: 30%;
-  transition-duration: 0.2s;
+  background-image: url(../img/png/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  top: 35px;
+  left: 50px;
 }
 .specifics__provider:hover::before {
   content: "";
@@ -1024,16 +1024,16 @@ body {
 }
 
 .specifics__quality:hover::after {
-  content: "3";
+  content: "";
   position: absolute;
-  font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 66px;
-  line-height: 66px;
-  font-weight: 700;
-  color: #034D8E;
-  top: 33px;
-  left: 30%;
-  transition-duration: 0.2s;
+  background-image: url(../img/png/quality.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px 60px;
+  width: 60px;
+  height: 60px;
+  top: 34px;
+  left: 48px;
 }
 .specifics__quality:hover::before {
   content: "";
@@ -1059,7 +1059,7 @@ body {
   font-weight: 700;
   color: #D8222E;
   top: 33px;
-  left: 30%;
+  left: 27%;
 }
 .specifics__delivery::before {
   content: "";
@@ -1075,16 +1075,16 @@ body {
 }
 
 .specifics__delivery:hover::after {
-  content: "4";
+  content: "";
   position: absolute;
-  font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 66px;
-  line-height: 66px;
-  font-weight: 700;
-  color: #034D8E;
-  top: 33px;
-  left: 30%;
-  transition-duration: 0.2s;
+  background-image: url(../img/png/speedometer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px 60px;
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  left: 27px;
 }
 .specifics__delivery:hover::before {
   content: "";
