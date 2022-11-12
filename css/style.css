@@ -485,7 +485,7 @@ body {
 }
 
 .banner__text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   color: #ffffff;
@@ -494,8 +494,8 @@ body {
 }
 
 .banner__text--big {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 40px;
+  line-height: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -511,7 +511,7 @@ body {
 .banner__button {
   color: #ffffff;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 20px;
   font-weight: 600;
   text-align: center;
   padding: 22px 0;
