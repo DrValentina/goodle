@@ -376,8 +376,8 @@ body {
 .main__title {
   max-width: 1000px;
   font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 40px;
+  line-height: 50px;
   font-weight: 700;
   color: #034D8E;
   text-align: center;
@@ -386,9 +386,9 @@ body {
 }
 
 .main__text {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
   color: #034D8E;
   text-align: center;
   margin: 0;
@@ -564,17 +564,23 @@ body {
 }
 
 .features {
+  margin: 0;
+  margin: 0 50px;
+  padding: 0;
+}
+
+.features__container {
   position: relative;
   max-width: 900px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   top: -300px;
   margin: 0 auto;
-  padding: 25px 50px;
-  padding-top: 50px;
+  padding: 15px 15px;
+  padding-top: 40px;
   list-style: none;
   background-color: #ffffff;
   border-radius: 25px;
@@ -851,14 +857,14 @@ body {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 100px 50px;
+  margin: 80px 50px;
 }
 
 .specific {
   position: relative;
-  max-width: 300px;
+  max-width: 200px;
   margin-right: 20px;
-  padding-top: 200px;
+  padding-top: 130px;
 }
 
 .specific:last-child {
@@ -866,69 +872,20 @@ body {
 }
 
 .specific__title {
-  font-size: 24px;
-  line-height: 30px;
+  max-width: 120px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 600;
   color: #000000;
   opacity: 0.5;
 }
 
 .specific__text {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 400;
   color: #000000;
   opacity: 0.7;
-}
-
-.specifics__consultation::after {
-  content: "1";
-  position: absolute;
-  font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 90px;
-  line-height: 90px;
-  font-weight: 700;
-  color: #D8222E;
-  top: 50px;
-  left: 35%;
-}
-.specifics__consultation::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/svg/circle.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px 200px;
-  width: 200px;
-  height: 200px;
-  top: 0;
-  left: 15%;
-}
-
-.specifics__consultation:hover::after {
-  content: "1";
-  position: absolute;
-  font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 90px;
-  line-height: 90px;
-  font-weight: 700;
-  color: #034D8E;
-  top: 50px;
-  left: 35%;
-  transition-duration: 0.2s;
-}
-.specifics__consultation:hover::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/svg/circle-red.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200px 200px;
-  width: 200px;
-  height: 200px;
-  top: 10px;
-  left: 8%;
-  transition-duration: 0.2s;
 }
 
 .specific:hover .specific__title {
@@ -940,16 +897,67 @@ body {
   opacity: 1;
 }
 
+.specifics__consultation::after {
+  content: "1";
+  position: absolute;
+  font-family: "Montserrat-Bold", "Open Sans", sans-serif;
+  font-size: 66px;
+  line-height: 66px;
+  font-weight: 700;
+  color: #D8222E;
+  top: 33px;
+  left: 33%;
+}
+.specifics__consultation::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/svg/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130px 130px;
+  width: 130px;
+  height: 130px;
+  top: 0;
+  left: 12%;
+}
+
+.specifics__consultation:hover::after {
+  content: "1";
+  position: absolute;
+  font-family: "Montserrat-Bold", "Open Sans", sans-serif;
+  font-size: 66px;
+  line-height: 66px;
+  font-weight: 700;
+  color: #034D8E;
+  top: 33px;
+  left: 33%;
+  transition-duration: 0.2s;
+}
+.specifics__consultation:hover::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/svg/circle-red1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130px 130px;
+  transform: rotate(90deg);
+  width: 130px;
+  height: 130px;
+  top: 10px;
+  left: 6%;
+  transition-duration: 0.2s;
+}
+
 .specifics__provider::after {
   content: "2";
   position: absolute;
   font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 90px;
-  line-height: 90px;
+  font-size: 66px;
+  line-height: 66px;
   font-weight: 700;
   color: #D8222E;
-  top: 50px;
-  left: 33%;
+  top: 33px;
+  left: 30%;
 }
 .specifics__provider::before {
   content: "";
@@ -957,36 +965,37 @@ body {
   background-image: url(../img/svg/circle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px 200px;
-  width: 200px;
-  height: 200px;
+  background-size: 130px 130px;
+  width: 130px;
+  height: 130px;
   top: 0;
-  left: 15%;
+  left: 12%;
 }
 
 .specifics__provider:hover::after {
   content: "2";
   position: absolute;
   font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 90px;
-  line-height: 90px;
+  font-size: 66px;
+  line-height: 66px;
   font-weight: 700;
   color: #034D8E;
-  top: 50px;
-  left: 33%;
+  top: 33px;
+  left: 30%;
   transition-duration: 0.2s;
 }
 .specifics__provider:hover::before {
   content: "";
   position: absolute;
-  background-image: url(../img/svg/circle-red.svg);
+  background-image: url(../img/svg/circle-red1.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px 200px;
-  width: 200px;
-  height: 200px;
+  transform: rotate(90deg);
+  background-size: 130px 130px;
+  width: 130px;
+  height: 130px;
   top: 10px;
-  left: 8%;
+  left: 6%;
   transition-duration: 0.2s;
 }
 
@@ -994,12 +1003,12 @@ body {
   content: "3";
   position: absolute;
   font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 90px;
-  line-height: 90px;
+  font-size: 66px;
+  line-height: 66px;
   font-weight: 700;
   color: #D8222E;
-  top: 50px;
-  left: 35%;
+  top: 33px;
+  left: 30%;
 }
 .specifics__quality::before {
   content: "";
@@ -1007,36 +1016,37 @@ body {
   background-image: url(../img/svg/circle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px 200px;
-  width: 200px;
-  height: 200px;
+  background-size: 130px 130px;
+  width: 130px;
+  height: 130px;
   top: 0;
-  left: 15%;
+  left: 12%;
 }
 
 .specifics__quality:hover::after {
   content: "3";
   position: absolute;
   font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 90px;
-  line-height: 90px;
+  font-size: 66px;
+  line-height: 66px;
   font-weight: 700;
   color: #034D8E;
-  top: 50px;
-  left: 35%;
+  top: 33px;
+  left: 30%;
   transition-duration: 0.2s;
 }
 .specifics__quality:hover::before {
   content: "";
   position: absolute;
-  background-image: url(../img/svg/circle-red.svg);
+  background-image: url(../img/svg/circle-red1.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px 200px;
-  width: 200px;
-  height: 200px;
+  transform: rotate(90deg);
+  background-size: 130px 130px;
+  width: 130px;
+  height: 130px;
   top: 10px;
-  left: 8%;
+  left: 6%;
   transition-duration: 0.2s;
 }
 
@@ -1044,11 +1054,11 @@ body {
   content: "4";
   position: absolute;
   font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 90px;
-  line-height: 90px;
+  font-size: 66px;
+  line-height: 66px;
   font-weight: 700;
   color: #D8222E;
-  top: 50px;
+  top: 33px;
   left: 30%;
 }
 .specifics__delivery::before {
@@ -1057,36 +1067,37 @@ body {
   background-image: url(../img/svg/circle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px 200px;
-  width: 200px;
-  height: 200px;
+  background-size: 130px 130px;
+  width: 130px;
+  height: 130px;
   top: 0;
-  left: 15%;
+  left: 12%;
 }
 
 .specifics__delivery:hover::after {
   content: "4";
   position: absolute;
   font-family: "Montserrat-Bold", "Open Sans", sans-serif;
-  font-size: 90px;
-  line-height: 90px;
+  font-size: 66px;
+  line-height: 66px;
   font-weight: 700;
   color: #034D8E;
-  top: 50px;
+  top: 33px;
   left: 30%;
   transition-duration: 0.2s;
 }
 .specifics__delivery:hover::before {
   content: "";
   position: absolute;
-  background-image: url(../img/svg/circle-red.svg);
+  background-image: url(../img/svg/circle-red1.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200px 200px;
-  width: 200px;
-  height: 200px;
+  transform: rotate(90deg);
+  background-size: 130px 130px;
+  width: 130px;
+  height: 130px;
   top: 10px;
-  left: 8%;
+  left: 6%;
   transition-duration: 0.2s;
 }
 

@@ -27,14 +27,14 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 100px 50px;
+  margin: 80px 50px;
 }
 
 .specific {
   position: relative;
-  max-width: 300px;
+  max-width: 200px;
   margin-right: 20px;
-  padding-top: 200px;
+  padding-top: 130px;
 }
 
 .specific:last-child {
@@ -42,73 +42,20 @@
 }
 
 .specific__title {
-  font-size: 24px;
-  line-height: 30px;
+  max-width: 120px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 600;
   color: $black;
   opacity: 0.5;
 }
 
 .specific__text {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 400;
   color: $black;
   opacity: 0.7;
-}
-
-.specifics__consultation {
-  &::after {
-    content: "1";
-    position: absolute;
-    font-family: $montserrat-bold;
-    font-size: 90px;
-    line-height: 90px;
-    font-weight: 700;
-    color: $red;
-    top: 50px;
-    left: 35%;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url(../img/svg/circle.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
-    top: 0;
-    left: 15%;
-  }
-}
-
-.specifics__consultation:hover {
-  &::after {
-    content: "1";
-    position: absolute;
-    font-family: $montserrat-bold;
-    font-size: 90px;
-    line-height: 90px;
-    font-weight: 700;
-    color: $blue;
-    top: 50px;
-    left: 35%;
-    transition-duration: 0.2s;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url(../img/svg/circle-red.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
-    top: 10px;
-    left: 8%;
-    transition-duration: 0.2s;
-  }
 }
 
 .specific:hover .specific__title {
@@ -120,16 +67,16 @@
   opacity: 1;
 }
 
-.specifics__provider{
+.specifics__consultation {
   &::after {
-    content: "2";
+    content: "1";
     position: absolute;
     font-family: $montserrat-bold;
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 66px;
+    line-height: 66px;
     font-weight: 700;
     color: $red;
-    top: 50px;
+    top: 33px;
     left: 33%;
   }
   &::before {
@@ -138,11 +85,66 @@
     background-image: url(../img/svg/circle.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
+    background-size: 130px 130px;
+    width: 130px;
+    height: 130px;
     top: 0;
-    left: 15%;
+    left: 12%;
+  }
+}
+
+.specifics__consultation:hover {
+  &::after {
+    content: "1";
+    position: absolute;
+    font-family: $montserrat-bold;
+    font-size: 66px;
+    line-height: 66px;
+    font-weight: 700;
+    color: $blue;
+    top: 33px;
+    left: 33%;
+    transition-duration: 0.2s;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/svg/circle-red1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 130px 130px;
+    transform: rotate(90deg);
+    width: 130px;
+    height: 130px;
+    top: 10px;
+    left: 6%;
+    transition-duration: 0.2s;
+  }
+}
+
+.specifics__provider{
+  &::after {
+    content: "2";
+    position: absolute;
+    font-family: $montserrat-bold;
+    font-size: 66px;
+    line-height: 66px;
+    font-weight: 700;
+    color: $red;
+    top: 33px;
+    left: 30%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/svg/circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 130px 130px;
+    width: 130px;
+    height: 130px;
+    top: 0;
+    left: 12%;
   }
 }
 
@@ -151,25 +153,26 @@
     content: "2";
     position: absolute;
     font-family: $montserrat-bold;
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 66px;
+    line-height: 66px;
     font-weight: 700;
     color: $blue;
-    top: 50px;
-    left: 33%;
+    top: 33px;
+    left: 30%;
     transition-duration: 0.2s;
   }
   &::before {
     content: "";
     position: absolute;
-    background-image: url(../img/svg/circle-red.svg);
+    background-image: url(../img/svg/circle-red1.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
+    transform: rotate(90deg);
+    background-size: 130px 130px;
+    width: 130px;
+    height: 130px;
     top: 10px;
-    left: 8%;
+    left: 6%;
     transition-duration: 0.2s;
   }
 }
@@ -179,12 +182,12 @@
     content: "3";
     position: absolute;
     font-family: $montserrat-bold;
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 66px;
+    line-height: 66px;
     font-weight: 700;
     color: $red;
-    top: 50px;
-    left: 35%;
+    top: 33px;
+    left: 30%;
   }
   &::before {
     content: "";
@@ -192,11 +195,11 @@
     background-image: url(../img/svg/circle.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
+    background-size: 130px 130px;
+    width: 130px;
+    height: 130px;
     top: 0;
-    left: 15%;
+    left: 12%;
   }
 }
 
@@ -205,25 +208,26 @@
     content: "3";
     position: absolute;
     font-family: $montserrat-bold;
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 66px;
+    line-height: 66px;
     font-weight: 700;
     color: $blue;
-    top: 50px;
-    left: 35%;
+    top: 33px;
+    left: 30%;
     transition-duration: 0.2s;
   }
   &::before {
     content: "";
     position: absolute;
-    background-image: url(../img/svg/circle-red.svg);
+    background-image: url(../img/svg/circle-red1.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
+    transform: rotate(90deg);
+    background-size: 130px 130px;
+    width: 130px;
+    height: 130px;
     top: 10px;
-    left: 8%;
+    left: 6%;
     transition-duration: 0.2s;
   }
 }
@@ -233,11 +237,11 @@
     content: "4";
     position: absolute;
     font-family: $montserrat-bold;
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 66px;
+    line-height: 66px;
     font-weight: 700;
     color: $red;
-    top: 50px;
+    top: 33px;
     left: 30%;
   }
   &::before {
@@ -246,11 +250,11 @@
     background-image: url(../img/svg/circle.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
+    background-size: 130px 130px;
+    width: 130px;
+    height: 130px;
     top: 0;
-    left: 15%;
+    left: 12%;
   }
 }
 
@@ -259,25 +263,26 @@
     content: "4";
     position: absolute;
     font-family: $montserrat-bold;
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 66px;
+    line-height: 66px;
     font-weight: 700;
     color: $blue;
-    top: 50px;
+    top: 33px;
     left: 30%;
     transition-duration: 0.2s;
   }
   &::before {
     content: "";
     position: absolute;
-    background-image: url(../img/svg/circle-red.svg);
+    background-image: url(../img/svg/circle-red1.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 200px 200px;
-    width: 200px;
-    height: 200px;
+    transform: rotate(90deg);
+    background-size: 130px 130px;
+    width: 130px;
+    height: 130px;
     top: 10px;
-    left: 8%;
+    left: 6%;
     transition-duration: 0.2s;
   }
 }
