@@ -471,7 +471,7 @@ body {
 
 .banner {
   position: relative;
-  background-image: url(../img/jpg/background_banner.jpg);
+  background-image: url(../img/jpg/bg2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -523,6 +523,7 @@ body {
   width: 262px;
   margin-right: 20px;
   cursor: pointer;
+  box-shadow: 2px 2px 10px 0 #ffffff, -2px -2px 10px 0 #ffffff;
 }
 .banner__button:hover {
   animation-duration: 0.2s;
@@ -1105,13 +1106,17 @@ body {
 }
 
 .questions {
-  margin: 0 60px;
-  padding: 0;
-  padding-top: 70px;
+  margin: 0;
+  padding: 80px 60px;
+  background-image: url(../img/jpg/bg-questions.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .questions__title {
   position: relative;
+  color: #ffffff;
 }
 
 .questions__title::after {
@@ -1183,14 +1188,15 @@ body {
   font-weight: 400;
   color: #034D8E;
   outline: 3px solid #034D8E;
-  border-radius: 25px;
+  border-radius: 28px;
   padding: 10px 25px;
   padding-top: 50px;
+  background-color: #ffffff;
 }
 
 .experts {
   padding-top: 70px;
-  margin: 0 100px;
+  margin: 0 60px;
   margin-top: 100px;
 }
 
@@ -1223,29 +1229,16 @@ body {
 
 .experts__expert {
   position: relative;
-  width: 550px;
+  width: 400px;
   border: none;
-  background-image: linear-gradient(#0a2248, #2c6cd0);
-  border-radius: 25px;
   margin-top: 20px;
 }
 
-.experts__expert-text {
-  position: absolute;
-  color: #ffffff;
-  bottom: 0;
-  background-color: rgba(0, 30, 108, 0.5);
-  border-radius: 25px;
-  padding: 10px 50px;
-}
-.experts__expert-text::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #ffffff;
-  top: 35px;
-  left: 0;
+.experts__expert-img {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  height: 250px;
 }
 
 .experts__expert-name {
@@ -1253,16 +1246,20 @@ body {
   line-height: 20px;
   font-weight: 600;
   margin: 0;
-  padding: 0;
-  padding-bottom: 10px;
+  color: #ffffff;
+  background-color: #034D8E;
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin-bottom: 10px;
 }
 
 .experts__expert-description {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  color: #034D8E;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .experts__map {
@@ -1328,7 +1325,7 @@ body {
 .form__input {
   width: 240px;
   border: none;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   background-color: transparent;
   margin-bottom: 28px;
 }
@@ -1382,9 +1379,8 @@ body {
 }
 
 .footer__contacts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .footer__contact--tel,
@@ -1421,7 +1417,7 @@ body {
 
 .footer__nav-item {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
