@@ -783,7 +783,7 @@ body {
   background-image: url(../img/png/bg-number3.png);
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 55%;
+  background-size: 50%;
   padding: 70px 0;
   color: #ffffff;
 }
@@ -801,7 +801,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  margin-left: 280px;
+  margin-left: 300px;
 }
 
 .numbers__enterprises {
@@ -836,7 +836,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 40px;
+  padding-left: 20px;
   margin-top: 20px;
 }
 
