@@ -25,7 +25,8 @@
 .experts__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  grid-gap: 100px;
   flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 50px;
@@ -43,9 +44,6 @@
   margin-left: 20px;
   padding: 0;
   height: 250px;
-}
-
-.experts__expert-text {
 }
 
 .experts__expert-name {
@@ -72,16 +70,16 @@
 .experts__map {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 50px auto;
   align-items: center;
 }
 
 .experts__map-text {
-  max-width: 600px;
-  font-size: 26px;
-  line-height: 36px;
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 600;
   color: $blue;
 }
