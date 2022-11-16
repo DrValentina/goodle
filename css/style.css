@@ -644,11 +644,10 @@ body {
 .about-us__title {
   position: relative;
 }
-
-.about-us__title::after {
+.about-us__title::before {
   content: "";
   position: absolute;
-  background-image: url(../img/png/about_us.png);
+  background-image: url("../img/png/lines.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 267px 37px;
@@ -656,9 +655,37 @@ body {
   height: 37px;
   top: -30px;
   left: 50%;
+  transform: translate(-50%);
+}
+
+.about-us__title::after {
+  content: "";
+  opacity: 1;
+  position: absolute;
+  background-image: url(../img/png/about_us_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65px 55px;
+  width: 65px;
+  height: 55px;
+  top: -35px;
+  left: 50%;
   transform: translateX(-50%);
 }
 
+.about-us__title--animation::after {
+  animation-name: about-us;
+  animation-duration: 2s;
+}
+
+@keyframes about-us {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .about-us__indent {
   max-width: 1000px;
   display: flex;
@@ -887,21 +914,52 @@ body {
 .specifics__title {
   position: relative;
 }
+.specifics__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/png/lines.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 267px 37px;
+  width: 267px;
+  height: 37px;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 .specifics__title::after {
   content: "";
   position: absolute;
-  background-image: url(../img/png/specifics.png);
+  background-image: url(../img/png/specifics-icon.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 267px 48px;
-  width: 267px;
+  background-size: 69px 48px;
+  width: 69px;
   height: 48px;
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
 }
 
+.specifics__title--animation::after {
+  animation-name: specifics-title;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes specifics-title {
+  from {
+    position: absolute;
+    top: -150px;
+    opacity: 0;
+  }
+  to {
+    top: -50px;
+    opacity: 1;
+  }
+}
 .specifics__container {
   display: flex;
   flex-direction: row;
@@ -1231,21 +1289,55 @@ body {
   position: relative;
   color: #ffffff;
 }
+.questions__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/png/lines.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 267px 37px;
+  width: 267px;
+  height: 37px;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 .questions__title::after {
   content: "";
   position: absolute;
-  background-image: url(../img/png/questions.png);
+  background-image: url(../img/png/questions-icon.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 267px 52px;
-  width: 267px;
+  background-size: 69px 52px;
+  width: 69px;
   height: 52px;
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
 }
 
+.questions__title--animation::after {
+  animation-name: questions-title;
+  animation-duration: 0.3s;
+  animation-iteration-count: 3;
+}
+
+@keyframes questions-title {
+  from {
+    position: absolute;
+    left: 50%;
+  }
+  30% {
+    left: 49%;
+  }
+  70% {
+    left: 51%;
+  }
+  to {
+    left: 50%;
+  }
+}
 .questions__container {
   max-width: 900px;
   display: flex;
@@ -1316,21 +1408,54 @@ body {
 .experts__title {
   position: relative;
 }
+.experts__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/png/lines.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 267px 37px;
+  width: 267px;
+  height: 37px;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 .experts__title::after {
   content: "";
   position: absolute;
-  background-image: url(../img/png/experts.png);
+  background-image: url(../img/png/experts-icon.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 267px 57px;
-  width: 267px;
+  background-size: 69px 57px;
+  width: 69px;
   height: 57px;
   top: -60px;
   left: 50%;
   transform: translateX(-50%);
 }
 
+.experts__title--animation::after {
+  animation-name: experts-title;
+  animation-duration: 0.5s;
+  animation-iteration-count: 3;
+}
+
+@keyframes experts-title {
+  from {
+    left: 46.6%;
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    left: 46.6%;
+    transform: scale(1.5, 1.5);
+  }
+  to {
+    left: 46.6%;
+    transform: scale(1, 1);
+  }
+}
 .experts__container {
   display: flex;
   flex-direction: row;

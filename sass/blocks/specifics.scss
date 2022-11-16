@@ -7,20 +7,53 @@
 
 .specifics__title {
   position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/png/lines.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 267px 37px;
+    width: 267px;
+    height: 37px;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .specifics__title::after {
   content: "";
   position: absolute;
-  background-image: url(../img/png/specifics.png);
+  background-image: url(../img/png/specifics-icon.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 267px 48px;
-  width: 267px;
+  background-size: 69px 48px;
+  width: 69px;
   height: 48px;
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.specifics__title--animation {
+  &::after {
+    animation-name: specifics-title;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes specifics-title {
+  from {
+    position: absolute;
+    top: -150px;
+    opacity: 0;
+  } to {
+    top: -50px;
+    opacity: 1;
+  }
 }
 
 .specifics__container {

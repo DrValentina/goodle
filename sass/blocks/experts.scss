@@ -6,20 +6,54 @@
 
 .experts__title {
   position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/png/lines.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 267px 37px;
+    width: 267px;
+    height: 37px;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .experts__title::after {
   content: "";
   position: absolute;
-  background-image: url(../img/png/experts.png);
+  background-image: url(../img/png/experts-icon.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 267px 57px;
-  width: 267px;
+  background-size: 69px 57px;
+  width: 69px;
   height: 57px;
   top: -60px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.experts__title--animation {
+  &::after {
+    animation-name: experts-title;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+  }
+}
+
+@keyframes experts-title {
+  from {
+    left: 46.6%;
+    transform: scale(0.5, 0.5);
+  } 50% {
+    left: 46.6%;
+    transform: scale(1.5, 1.5);
+  }to {
+    left: 46.6%;
+    transform: scale(1, 1);
+  }
 }
 
 .experts__container {
